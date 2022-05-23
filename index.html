@@ -13,7 +13,7 @@ const map = L.map('map', {
 });
 
 
-L.tileLayer('https://secondlife-maps-cdn.akamaized.net/map-{z}-{region_x}-{region_y}-objects.jpg', { attribution: 'tst' }).addTo(map);
+L.tileLayer('https://secondlife-maps-cdn.akamaized.net/map-{z}-{region_x}-{region_y}-objects.jpg', { attribution: 'tst' } {crs: L.CRS.Simple } ).addTo(map);
 
 
 const marker1 = L.marker([-37.699450, 176.279420]).addTo(map);
